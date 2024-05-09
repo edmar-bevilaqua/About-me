@@ -95,18 +95,6 @@ header {
     left: 0;
 }
 
-
-/* Fixando o rodapé ao final da página*/
-footer {
-    position: absolute;
-    background-color: #333;
-    height: 40px;
-    width: 100%;
-    bottom: 0;
-    text-align: center;
-    color: white;
-}
-
 /* Estilos da página index.html */
 .container {
     display: flex;
@@ -116,11 +104,10 @@ footer {
 .imagem {
     width: 400px;
     height: 400px;
-    margin-right: 10px;
+    margin-right: 25px;
     border-radius: 50%;
 }
 .textos {
-    border: 3px solid black;
     border-radius: 10px;
     padding: 5px 10px 5px 10px;
     line-height: 1.5;
@@ -137,9 +124,16 @@ footer {
     color: #555;
     margin-bottom: 30px;
 }
-.textos p, li{
+.textos p{
     font-size: 20px;
     color: black;
+    margin-bottom: 15px;
+}
+
+.textos li {
+    font-size: 20px;
+    color: black;
+    margin-left: 20px;
 }
 
 .container-text {
@@ -152,4 +146,51 @@ footer {
     justify-content: center;
     border: 2px solid black;
     background-color: lightgray;
+    padding: 20px 5px 20px 5px;
+}
+
+.idiomas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.idiomas span {
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.barra {
+    width: 125px;
+    height: 25px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.barra div {
+    height: 100%;
+    width: 10%;
+    border-radius: 15px;
+    background-color: #222;
+    transition: width 4s ease;
+}
+
+.c-misc-left {
+    width: 40%;
+    max-width: 350px;
+}
+
+.c-misc-left p {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.c-misc-middle {
+    width: 40%;
+}
+
+.c-misc-right {
+    width: 20%;
 }

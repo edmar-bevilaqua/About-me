@@ -48,13 +48,49 @@
     </div>
 
     <div class="container-misc">
-        <p>olá</p>
+        <div class="c-misc-left">
+            <p>Idiomas</p>
+            <div class="idiomas">
+                <span>Português</span>
+                <div class="barra">
+                    <div id="pt"></div>
+                </div>
+            </div>
+            <div class="idiomas">
+                <span>Inglês</span>
+                <div class="barra">
+                    <div id="en"></div>
+                </div>
+            </div>
+            <div class="idiomas">
+                <span>Espanhol</span>
+                <div class="barra">
+                    <div id="es"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="c-misc-middle">
+
+        </div>
+
+        <div class="c-misc-right">
+            
+        </div>
     </div>
     
-
-
-    <footer>
-        <p>Aqui irá parte do rodapé, onde ficarão contidos informações adicionais.</p>
-    </footer>
+    <script>
+        let values = new Map();
+        values.set("pt", 100);
+        values.set("en", 80);
+        values.set("es", 60);
+        const prog_pt = document.querySelector("#pt");
+        prog_pt.setAttribute("style", "width: " + values.get("pt") + "%");
+        const prog_en = document.querySelector("#en");
+        prog_en.setAttribute("style", "width: " + values.get("en") + "%");
+        const prog_es = document.querySelector("#es");
+        prog_es.setAttribute("style", "width: " + values.get("es") + "%");
+    </script>
+    
 </body>
 </html>
