@@ -1,0 +1,53 @@
+section {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.universidade {
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.imagem {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.section-text {
+    text-align: center;
+    margin-top: 30px;
+    padding: 30px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+
+}
+
+#ufsm {
+    background-image: url(../images/fundo-ufsm.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#uninter {
+    background-image: url(../images/fundo-uninter.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#pucrs {
+    background-image: url(../images/fundo-pucrs.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.text {
+    background-color: #22222290;
+    border-radius: 10px;
+    padding: 10px;
+}
