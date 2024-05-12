@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/menu.css">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="../styles/menu.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <script src="https://kit.fontawesome.com/917afdb6bd.js" crossorigin="anonymous"></script>
     <title>Sobre Mim</title>
 </head>
@@ -17,8 +17,8 @@
                 <div class="menu">
                     <nav>
                         <a href="#" id="fixo">Sobre</a>
-                        <a href="./formacao/formacao.html">Formação</a>
-                        <a href="./portfolio/portfolio.html">Portfólio</a>
+                        <a href="../pages/formacao.html">Formação</a>
+                        <a href="../pages/portfolio.html">Portfólio</a>
                     </nav>
                 </div>
                 <div class="contato">
@@ -30,7 +30,7 @@
 
     <div class="container-text">
         <div class="container">
-            <img src="./Edmar.jpg" alt="Uma imagem de Edmar Junyor Bevilaqua" class="imagem">
+            <img src="../images/Edmar.jpg" alt="Uma imagem de Edmar Junyor Bevilaqua" class="imagem">
             <div class="textos">
                 <h1>Edmar Junyor Bevilaqua</h1>
                 <h2>Cientista de Dados | Analista e Desenvolvedor de Softwares | Engenheiro Florestal</h2>
@@ -131,19 +131,6 @@
             </div>
         </div>
     </div>
-    
-    <script>
-        let values = new Map();
-        values.set("pt", 100);
-        values.set("en", 80);
-        values.set("es", 60);
-        const prog_pt = document.querySelector("#pt");
-        prog_pt.setAttribute("style", "width: " + values.get("pt") + "%");
-        const prog_en = document.querySelector("#en");
-        prog_en.setAttribute("style", "width: " + values.get("en") + "%");
-        const prog_es = document.querySelector("#es");
-        prog_es.setAttribute("style", "width: " + values.get("es") + "%");
-    </script>
     
 </body>
 </html>

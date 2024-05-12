@@ -72,7 +72,6 @@
 
 .barra-esquerda div {
     height: 100%;
-    width: 10%;
     border-radius: 15px;
     background-color: #222;
 }
@@ -155,17 +154,51 @@
 }
 
 #python, #organizacao {
-    width: 90%;
+    animation: progress-90 3s ease-in-out forwards;
 }
 
-#java, #R, #js {
-    width: 70%;
+#java, #R, #js, #es {
+    animation: progress-70 3s ease-in-out forwards;
 }
 
-#vba, #sql {
-    width: 80%;
+#vba, #sql, #en {
+    animation: progress-80 3s ease-in-out forwards;
 }
 
-#git, #communication {
-    width: 100%;
+#git, #communication, #pt {
+    animation: progress-100 3s ease-in-out forwards;
+}
+
+/* Criando as barras de progresso */
+@keyframes progress-70 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 70%;
+    }
+}
+@keyframes progress-80 {
+    0% {
+        width: 0;
+}
+    100% {
+        width: 80%;
+    }
+}
+@keyframes progress-90 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}
+@keyframes progress-100 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
 }
