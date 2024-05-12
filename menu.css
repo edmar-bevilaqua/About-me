@@ -1,0 +1,96 @@
+
+/* Fazendo o reset dos estilos: */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Estilo para o menu principal */
+header {
+    background-color: #333;
+    width: 100%;
+}
+.container-header {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+.name {
+    width: 50%;
+    text-align: left;
+    color: #bdbdbd;
+    font-size: 18px;
+}
+.menu {
+    width: 35%;
+    text-align: right;
+}
+.contato {
+    width: 15%;
+    text-align: right;
+}
+.menu nav a {
+    color: #bdbdbd;
+    text-decoration: none;
+    padding-right: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+}
+.menu nav a::after {
+    content: " ";
+    width: 0px;
+    height: 3px;
+    background-image: linear-gradient(45deg, #616161, #bdbdbd);
+    position: absolute;
+    top: 23px;
+    left: 0;
+    transition: width 0.5s;
+}
+.menu nav a:hover::after {
+    width: 50px;
+}
+.menu nav a:hover {
+    color: #fff;
+    transition-duration: 0.35s;
+}
+.contato a {
+    color: #bdbdbd;
+    text-decoration: none;
+    margin: -15px;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px 0 0 0;
+}
+.contato a:hover {
+    background-color: #bdbdbd;
+    transition-duration: 0.5s;
+    color: #fff;
+}
+.contato i {
+    padding-left: 5px;
+}
+#fixo {
+    color: #fff;
+    text-decoration: none;
+    padding-right: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+}
+#fixo::after {
+    content: " ";
+    width: 50px;
+    height: 3px;
+    background-image: linear-gradient(45deg, #616161, #bdbdbd);
+    position: absolute;
+    top: 23px;
+    left: 0;
+}
