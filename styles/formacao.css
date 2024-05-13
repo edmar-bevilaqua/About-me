@@ -47,7 +47,15 @@ h1 {
 }
 
 .text {
-    background-color: #22222290;
+    background-color: rgba(255, 255, 255, 0.733);
     border-radius: 10px;
     padding: 10px;
+    width: fit-content;
+}
+
+.inner-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
