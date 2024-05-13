@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/menu.css">
+    <script src="https://kit.fontawesome.com/917afdb6bd.js" crossorigin="anonymous"></script>
+    <title>Portfólio</title>
+</head>
+<body>
+    <header>
+        <div class="container-header">
+            <div class="name">
+                <p>Edmar Junyor Bevilaqua</p>
+            </div>
+            <div class="menu">
+                <nav>
+                    <a href="../pages/index.html">Sobre</a>
+                    <a href="../pages/formacao.html">Formação</a>
+                    <a href="../pages/portfolio.html">Portfólio</a>
+                </nav>
+            </div>
+            <div class="contato">
+                <a href="#">Fale Comigo <i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <h2>Registration Form</h2>
+        <form action="/submit_contact_form.php" class="form-container">
+            <label for="first">First Name:</label>
+            <input type="text" id="first" name="first" required>
+
+            <label for="last">Last Name:</label>
+            <input type="text" id="last" name="last" required>
+
+            <label for="email">Best Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
