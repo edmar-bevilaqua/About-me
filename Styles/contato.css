@@ -14,6 +14,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: 5vh 0 5vh 0;
+    user-select: text;
 }
 
 .div-formulario {
@@ -93,14 +94,17 @@ textarea {
     min-width: 350px;
     height: 100%;
     margin: 0 50px 0 20px;
-    border: 1px solid black;
-    border-radius: 15px;
-    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.603);
 }
 
 .email-container {
+    width: fit-content;
     display: flex;
     flex-direction: row;
+    margin-top: 50px;
+    border: 1px solid #969696;
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
 }
 
 .img-email {
@@ -117,4 +121,20 @@ textarea {
 .img-email i {
     font-size: 35px;
     color: var(--cor00);
+}
+
+.email a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor00);
+}
+
+.textos h1 {
+    font-size: 60px;
+}
+
+.textos p {
+    font-size: 25px;
+    margin-top: 15px;
+    color: #7e7d7d;
 }
