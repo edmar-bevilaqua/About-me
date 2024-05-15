@@ -97,3 +97,24 @@ textarea {
     border-radius: 15px;
     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.603);
 }
+
+.email-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 5px;
+    height: inherit;
+    padding: 5px 10px 5px 10px;
+    margin-right: 15px;
+    border: 1px solid #ddd;
+}
+.img-email i {
+    font-size: 35px;
+    color: var(--cor00);
+}
