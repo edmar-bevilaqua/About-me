@@ -25,6 +25,7 @@ body {
     max-width: 800px;
     min-width: 350px;
     width: 33vw;
+    margin-right: 25px;
 }
 
 .div-formulario h2 {
