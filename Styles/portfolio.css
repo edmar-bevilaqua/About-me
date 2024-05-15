@@ -1,0 +1,33 @@
+:root {
+    --cor00: rgb(45, 46, 64);
+    --cor01: rgb(67, 73, 89);
+}
+
+body {
+    background-color: var(--cor01);
+}
+
+.main {
+    height: calc(100vh - 54px);
+    background-color: var(--cor01);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#first-block {
+    background-color: aliceblue;
+    flex-grow: 1.5;
+}
+
+#second-block {
+    flex-grow: 1.25;
+    width: 100%;
+    background-color: var(--cor00);
+}
+
+#third-block {
+    flex-grow: 1;
+    width: 100%;
+}
