@@ -1,15 +1,16 @@
 :root {
     --cor00: rgb(45, 46, 64);
     --cor01: rgb(67, 73, 89);
+    --width: 1500px
 }
 
 body {
-    background-color: var(--cor01);
+    background-color: var(--cor00);
 }
 
 .main {
     height: calc(100vh - 54px);
-    background-color: var(--cor01);
+    background-color: var(--cor00);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,17 +18,69 @@ body {
 }
 
 #first-block {
-    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
     flex-grow: 1.5;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#me {
+    position: absolute;
+    background: none;
+    height: 500px;
+    width: 500px;
+    top: -500px;
+    left: calc(70vw - 250px);
+    opacity: 70%;
+}
+
+
+@media (max-height: 1000px) {
+    #me {
+        position: absolute;
+        background: none;
+        height: 350px;
+        width: 350px;
+        top: -350px;
+        left: calc(70vw - 175px);
+        opacity: 70%;
+    }
+}
+
+
+@media (max-height: 700px) {
+    #me {
+        position: absolute;
+        background: none;
+        height: 250px;
+        width: 250px;
+        top: -250px;
+        left: calc(70vw - 125px);
+        opacity: 70%;
+    }
 }
 
 #second-block {
+    position: relative;
     flex-grow: 1.25;
     width: 100%;
-    background-color: var(--cor00);
+    background-color: var(--cor01);
 }
 
 #third-block {
     flex-grow: 1;
     width: 100%;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #cfcfcf;
+    text-shadow: 1px 1px 1px;
+    max-width: var(--width);
+    width: 80vw;
 }
