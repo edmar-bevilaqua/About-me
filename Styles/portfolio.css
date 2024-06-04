@@ -1,11 +1,16 @@
 :root {
     --cor00: rgb(45, 46, 64);
     --cor01: rgb(67, 73, 89);
-    --width: 1500px
+    --cor02: rgb(76, 82, 100);
+    --width: 1500px;
+    --corboxnothover: black;
 }
 
 body {
     background-color: var(--cor00);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .main {
@@ -20,46 +25,23 @@ body {
 #first-block {
     display: flex;
     flex-direction: row;
-    flex-grow: 1.5;
     width: 100%;
     align-items: center;
     justify-content: center;
 }
 
+#my-container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
 #me {
-    position: absolute;
     background: none;
-    height: 500px;
-    width: 500px;
-    top: -500px;
-    left: calc(70vw - 250px);
-    opacity: 70%;
-}
-
-
-@media (max-height: 1000px) {
-    #me {
-        position: absolute;
-        background: none;
-        height: 350px;
-        width: 350px;
-        top: -350px;
-        left: calc(70vw - 175px);
-        opacity: 70%;
-    }
-}
-
-
-@media (max-height: 700px) {
-    #me {
-        position: absolute;
-        background: none;
-        height: 250px;
-        width: 250px;
-        top: -250px;
-        left: calc(70vw - 125px);
-        opacity: 70%;
-    }
+    height: 400px;
+    width: 400px;
+    opacity: 85%;
+    margin-top: auto;
 }
 
 #second-block {
@@ -90,16 +72,45 @@ body {
 }
 
 .block-content {
-    height: 150px;
-    width: 150px;
+    height: 300px;
+    width: 300px;
     border-radius: 10px;
-    margin-right: 15px;
-    border: 3px solid #cfcfcf;;
+    margin-right: 30px;
+    border: 3px solid var(--cor00);
+    transition: opacity 0.5s ease;
+    background-color: var(--cor02);
+    padding: 15px;
+}
+
+.block-content:last-child {
+    margin: 0;
+}
+
+.container-second-block {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-second-block:hover .block-content:not(:hover) {
+    opacity: 0.4;
 }
 
 .block-content:hover {
-    background-color: var(--cor00);
-    border: 2px solid rgb(43, 23, 90);
-    box-shadow: 0px 0px 4px 3px rgba(43, 23, 90, 0.384);
-    transition: all 150ms;
+    border: 2px solid purple;
+    box-shadow: 0px 0px 10px purple;
+}
+
+.block-content img {
+    width: 80px;
+    height: 80px;
+}
+
+.block-content h1 {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.block-content p {
+    font-size: 20px;
+    margin-top: 10px;
 }
