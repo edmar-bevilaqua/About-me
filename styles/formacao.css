@@ -1,23 +1,24 @@
+/* Estilo da secção principal com os cursos */
+
 section {
     display: block;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-
 h1 {
     font-size: 2em;
 }
-
 .universidade {
     font-size: 1.5em;
     font-weight: normal;
 }
-
 .imagem {
     max-width: 250px;
     max-height: 250px;
 }
+
+/* Secção genérica para colocar texto + imagem */
 
 .section-text {
     text-align: center;
@@ -27,35 +28,33 @@ h1 {
     border-top: 2px solid black;
 
 }
-
-#ufsm {
-    background-image: url(../images/fundo-ufsm.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-#uninter {
-    background-image: url(../images/fundo-uninter.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-#pucrs {
-    background-image: url(../images/fundo-pucrs.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-}
-
 .text {
     background-color: rgba(255, 255, 255, 0.733);
     border-radius: 10px;
     padding: 10px;
     width: fit-content;
 }
-
 .inner-div {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+/* Formatações específicas para cada div */
+
+#ufsm {
+    background-image: url(../images/fundo-ufsm.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+#uninter {
+    background-image: url(../images/fundo-uninter.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+#pucrs {
+    background-image: url(../images/fundo-pucrs.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }

@@ -1,4 +1,22 @@
-/* Estilos da página index.html */
+/* Variáveis usadas nessa página */
+
+:root {
+    --cor00: rgb(45, 46, 64);
+    --cor01: rgb(67, 73, 89);
+    --cor02: rgb(105, 112, 133);
+    --cor03: rgb(163, 173, 199);
+    --cortexto: rgb(221, 221, 221);
+}
+
+body {
+    background-color: var(--cor01);
+}
+
+/* Estilos para a secção dos textos */
+
+.container-text {
+    margin: 5% 8px 5% 8px;
+}
 .container {
     display: flex;
     align-items: center; /* Alinha verticalmente */
@@ -9,6 +27,7 @@
     height: 400px;
     margin-right: 25px;
     border-radius: 50%;
+    box-shadow: 4px 4px 10px var(--cor00);
 }
 .textos {
     border-radius: 10px;
@@ -24,31 +43,28 @@
 .textos h2 {
     font-size: 25px;
     margin: 0px;
-    color: #555;
+    color: var(--cor03);
     margin-bottom: 30px;
 }
 .textos p{
     font-size: 20px;
-    color: black;
+    color: var(--cortexto);
     margin-bottom: 15px;
 }
-
 .textos li {
     font-size: 20px;
-    color: black;
+    color: var(--cortexto);
     margin-left: 20px;
 }
 
-.container-text {
-    margin: 5% 8px 5% 8px;
-}
+/* Estilos para secção dos idiomas */
 
 .container-misc {
     display: flex;
     align-items: center;
     justify-content: center;
     border: 2px solid black;
-    background-color: rgb(213, 198, 185);
+    background-color: var(--cor00);
     padding: 20px 5px 20px 5px;
 }
 
@@ -68,12 +84,14 @@
     height: 25px;
     border-radius: 15px;
     background-color: #fff;
+    border: 1px solid black;
+    box-shadow: 0px 0px 5px black inset;
 }
 
 .barra-esquerda div {
     height: 100%;
     border-radius: 15px;
-    background-color: #222;
+    background-color: var(--cor02);
 }
 
 .c-misc-left {
@@ -91,6 +109,8 @@
     text-decoration: underline;
     text-align: center;
 }
+
+/* Estilos para secção das skills */
 
 .c-misc-middle {
     height: 220px;
@@ -144,13 +164,14 @@
     border-radius: 15px;
     background-color: #fff;
     margin-bottom: 25px;
+    box-shadow: 0px 0px 5px black inset;
 }
 
 .barra-meio div {
     height: 100%;
     width: 10%;
     border-radius: 15px;
-    background-color: #222;
+    background-color: var(--cor02);
 }
 
 #python, #organizacao {
@@ -201,4 +222,13 @@
     100% {
         width: 100%;
     }
+}
+
+.container-misc p, .c-misc-middle p {
+    color: var(--cor03);
+    text-decoration: none;
+}
+
+.container-misc span, .c-misc-middle span {
+    color: white
 }
